@@ -1,0 +1,299 @@
+body {
+    box-sizing: border-box;
+    margin: 0 10% 0 10%;
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(76, 78, 78);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    gap: 5%;
+    margin: 2%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 500;
+}
+
+
+/*Main*/
+
+.card-img {
+    border-radius: 0%;
+}
+
+.card-img-overlay {
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 4%;
+    border-radius: 0%;
+
+}
+
+.cardMain {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 2%;
+    padding: 2%;
+}
+
+.card {
+    border-radius: 0%;
+    border: none;
+}
+
+button {
+    background-color: black;
+    border: solid 2px black;
+    color: aliceblue;
+    border-radius: 20px;
+    opacity: 0.5;
+    padding: 1%;
+    width: fit-content;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    body {
+        width: 768px;
+        margin: 0%;
+    }
+
+    .cardMain {
+        background-color: rgba(255, 255, 255, 0.3);
+        grid-column: 1/3;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 1%;
+        margin: 2%;
+        padding: 2%;
+    }
+
+}
+
+@media screen and (max-width:575px) {
+    body {
+        width: 575px;
+    }
+
+    .cardMain {
+        margin: 1%;
+        padding: 1%;
+    }
+}
+
+
+
+/*Cards*/
+
+.productos {
+    color: darkgoldenrod
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    height: 60px;
+    text-transform: uppercase;
+    background-color: rgb(34, 34, 34)
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px rgba(7, 7, 7, 0.25);
+}
+
+.imgCard {
+    width: 100%;
+    height: max-content;
+}
+
+.cardBody {
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 8%;
+}
+
+.cardTitle {
+    text-transform: uppercase;
+    color: darkgoldenrod
+}
+
+.cardText {
+    color: whitesmoke;
+    overflow: hidden;
+}
+
+.textSecondary {
+    font-size: small;
+    font-weight: 600;
+    color: darkgoldenrod;
+
+}
+
+.btnInfo {
+    border: solid 2px darkgoldenrod;
+    color: darkgoldenrod;
+    border-radius: 0%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2%;
+    gap: 2%;
+}
+
+.cardReverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.imgCard2 {
+    width: 100%;
+}
+
+.cardBody2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+
+/*Calidad*/
+
+.calidad {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(12, 12, 12);
+    color: whitesmoke;
+    font-weight: 700;
+    padding: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.logosCalidad {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+}
+
+
+/* nosotros*/
+
+.nosotros {
+
+    background-color: rgb(76, 78, 78);
+    color: #85848b;
+    display: flex;
+    flex-direction: column;
+}
+
+.locales {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+}
+
+.direcciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 5%;
+}
+
+.mapa {
+    display: flex;
+
+}
+
+.contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+}
+
+.bodyContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.redes {
+    color: darkgoldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 5%;
+    padding: 2%;
+}
+
+
+
+/* Footer*/
+
+footer {
+    color: #85848b;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+}
